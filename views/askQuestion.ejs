@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<h1> StackOverflow </h1>
+<h2> Ask Question </h2>
+
+<center>
+<h2><p>Welcome, <%= username %></p></h2>
+<form action="/askQuestion" method="POST">
+	<input type="text" name="username"
+		value="<%= username %>"
+		placeholder="Username">
+	<input type="text" name="title"
+		placeholder="Title">
+	<input type="text" name="content"
+		placeholder="Content">
+	<button>Ask</button>
+</form>
+
+<li><a href="/register">Sign up!!</a></li>
+<li><a href="/login">Login</a></li>
+<li><a href="/logout">Logout</a></li>
+
+</center>
